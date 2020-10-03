@@ -7,7 +7,7 @@
 
 #include <cppcoro/config.hpp>
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <array>
 #include <cassert>
 #include <algorithm>

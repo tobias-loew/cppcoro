@@ -5,7 +5,7 @@
 #ifndef CPPCORO_DETAIL_WHEN_ALL_COUNTER_HPP_INCLUDED
 #define CPPCORO_DETAIL_WHEN_ALL_COUNTER_HPP_INCLUDED
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <atomic>
 #include <cstdint>
 

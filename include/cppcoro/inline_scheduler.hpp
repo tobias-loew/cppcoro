@@ -5,7 +5,7 @@
 #ifndef CPPCORO_INLINE_SCHEDULER_HPP_INCLUDED
 #define CPPCORO_INLINE_SCHEDULER_HPP_INCLUDED
 
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

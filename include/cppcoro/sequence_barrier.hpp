@@ -15,7 +15,7 @@
 #include <cstdint>
 #include <limits>
 #include <optional>
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

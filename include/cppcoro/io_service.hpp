@@ -19,7 +19,7 @@
 #include <atomic>
 #include <utility>
 #include <mutex>
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

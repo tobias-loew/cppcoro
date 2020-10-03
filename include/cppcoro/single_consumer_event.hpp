@@ -6,7 +6,7 @@
 #define CPPCORO_SINGLE_CONSUMER_EVENT_HPP_INCLUDED
 
 #include <atomic>
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

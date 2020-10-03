@@ -17,7 +17,7 @@
 #include <utility>
 #include <type_traits>
 
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

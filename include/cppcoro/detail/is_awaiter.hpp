@@ -6,7 +6,7 @@
 #define CPPCORO_DETAIL_IS_AWAITER_HPP_INCLUDED
 
 #include <type_traits>
-#include <experimental/coroutine>
+#include <coroutine>
 
 namespace cppcoro
 {

@@ -9,7 +9,7 @@
 #include <cppcoro/awaitable_traits.hpp>
 #include <cppcoro/detail/lightweight_manual_reset_event.hpp>
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <cassert>
 #include <exception>
 

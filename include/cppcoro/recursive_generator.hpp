@@ -7,7 +7,7 @@
 
 #include <cppcoro/generator.hpp>
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <type_traits>
 #include <utility>
 #include <cassert>

@@ -5,7 +5,7 @@
 #ifndef CPPCORO_ASYNC_MANUAL_RESET_EVENT_HPP_INCLUDED
 #define CPPCORO_ASYNC_MANUAL_RESET_EVENT_HPP_INCLUDED
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <atomic>
 #include <cstdint>
 

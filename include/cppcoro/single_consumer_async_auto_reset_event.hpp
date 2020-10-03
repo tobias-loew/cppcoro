@@ -5,7 +5,7 @@
 #ifndef CPPCORO_SINGLE_CONSUMER_ASYNC_AUTO_RESET_EVENT_HPP_INCLUDED
 #define CPPCORO_SINGLE_CONSUMER_ASYNC_AUTO_RESET_EVENT_HPP_INCLUDED
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <atomic>
 #include <cstdint>
 #include <cassert>

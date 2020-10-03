@@ -8,7 +8,7 @@
 #include <cppcoro/on_scope_exit.hpp>
 
 #include <atomic>
-#include <experimental/coroutine>
+#include <coroutine>
 #include <type_traits>
 #include <cassert>
 

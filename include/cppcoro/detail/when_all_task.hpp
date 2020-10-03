@@ -10,7 +10,7 @@
 #include <cppcoro/detail/when_all_counter.hpp>
 #include <cppcoro/detail/void_value.hpp>
 
-#include <experimental/coroutine>
+#include <coroutine>
 #include <cassert>
 
 namespace cppcoro
