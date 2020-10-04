@@ -10,6 +10,10 @@ for root, dirs, files in os.walk("."):
         if "processedincludes" in filename:
             continue
 
+        if not (os.path.splitext(filename)[1] in [".hpp", ".cpp"]):
+            print("not a source file: {}".format(filename))
+            continue
+
         fullfilename = os.path.join(root, filename)
         modifiedfilename = (os.path.splitext(fullfilename)[0]+
                 "_processedincludes"+
@@ -24,7 +28,7 @@ for root, dirs, files in os.walk("."):
             newlines = []
             for line in lines:
                 if m := re.match(r"#include <cppcoro/([^>]*)>", line):
-                    includedfilename = m.groups()[0]
+                    includedfilename = os.path.join("include", "cppcoro", m.groups()[0])
                     print("including {}".format(includedfilename))
                     newlines += open(includedfilename).readlines()
                     print("include done")
