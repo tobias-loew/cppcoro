@@ -11,6 +11,7 @@ namespace cppcoro {
 
   using suspend_always = std::suspend_always;
   using suspend_never = std::suspend_never;
+  using noop_coroutine = std::noop_coroutine
 }
 
 #elif __has_include(<experimental/coroutine>)
@@ -23,6 +24,7 @@ namespace cppcoro {
 
   using suspend_always = std::experimental::suspend_always;
   using suspend_never = std::experimental::suspend_never;
+  using noop_coroutine = std::experimental::noop_coroutine
 }
 
 #else
