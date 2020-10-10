@@ -6,7 +6,7 @@
 #include <filesystem>
 
 namespace cppcoro {
-  using filesystem = std::filesystem;
+    namespace filesystem = std::filesystem;
 }
 
 #elif __has_include(<experimental/filesystem>)
@@ -14,7 +14,7 @@ namespace cppcoro {
 #include <experimental/filesystem>
 
 namespace cppcoro {
-  using filesystem = std::experimental::filesystem;
+    namespace filesystem = std::experimental::filesystem;
 }
 
 #else
