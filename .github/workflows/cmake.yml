@@ -55,6 +55,7 @@ jobs:
             os: windows-latest,
             cxx: "clang-cl",
             environment_script: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
+            toolset: "clang_cl_x64",
           }
 
     steps:
@@ -111,6 +112,7 @@ jobs:
         [ -n "${{ matrix.config.environment_script }}" ] && "${{ matrix.config.environment_script }}"
 
         cmake $GITHUB_WORKSPACE \
+          -DCMAKE_GENERATOR_TOOLSET=${{ matrix.config.toolset }} \
           -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
           -DCMAKE_CXX_STANDARD=20 \
           -DBUILD_TESTING=ON \
