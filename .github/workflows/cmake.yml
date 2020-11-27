@@ -50,6 +50,12 @@ jobs:
             cxx: "cl",
             environment_script: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
           }
+          - {
+            name: "Windows MSVC 2019 (clang-x64)",
+            os: windows-latest,
+            cxx: "clang-cl",
+            environment_script: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
+          }
 
     steps:
     - uses: actions/checkout@v2
